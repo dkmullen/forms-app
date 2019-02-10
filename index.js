@@ -1,5 +1,7 @@
 const app = require('./app');
 
-app.listen(3050, () => {
-    console.log('Running on port 3050');
+app.listen(app.settings.port, () => {
+    console.log(`Running on ${app.settings.port}`);
 })
+
+// mongodb://dkm:roger456@ds123444.mlab.com:23444/dkm-forms-app
